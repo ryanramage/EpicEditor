@@ -3,7 +3,7 @@
  * Copyright (c) 2011-2012, Oscar Godson. (MIT Licensed)
  */
 
-(function (window, undefined) {
+define('EpicEditor',['marked'], function(marked){
   /**
    * Applies attributes to a DOM object
    * @param  {object} context The DOM obj you want to apply the attributes to
@@ -1191,10 +1191,11 @@
     return self;
   }
 
-  EpicEditor.version = '@VERSION';
+  EpicEditor.version = '0.1.0';
 
   // Used to store information to be shared acrossed editors
   EpicEditor._data = {};
 
-  window.EpicEditor = EpicEditor;
-})(window);
+  return EpicEditor;
+
+})
