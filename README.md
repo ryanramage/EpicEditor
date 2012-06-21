@@ -14,14 +14,12 @@ var editor = new EpicEditor().load();
 
 ## Quick Start
 
-EpicEditor is easy to implement. Add the script and assets to your page, provide a target container and call `load()`.
+EpicEditor is easy to implement. Provide a target container and call `load()`.
 
-### Step 1: Download
+### Step 1: Jam
 
-[Download the latest release](http://epiceditor.com) or clone the repo:
-
-```bash
-$ git clone git@github.com:OscarGodson/EpicEditor
+```
+jam install EpicEditor
 ```
 
 ### Step 2: Create your container element
@@ -30,17 +28,14 @@ $ git clone git@github.com:OscarGodson/EpicEditor
 <div id="epiceditor"></div>
 ```
 
-### Step 3: Add the `epiceditor.js` file
+### Step 3: Add the dependency, and init
 
-```html
-<script src="epiceditor.min.js"></script>
+```
+define('js/app',['EpicEditor'],function(EpicEditor){
+   var editor = new EpicEditor().load();
+})
 ```
 
-### Step 4: Init EpicEditor
-
-```javascript
-var editor = new EpicEditor().load();
-```
 
 ## API
 
