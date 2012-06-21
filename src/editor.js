@@ -278,7 +278,7 @@ define('EpicEditor',['marked'], function(marked){
       , _defaultFileSchema
       , _defaultFile
       , defaults = { container: 'epiceditor'
-        , basePath: 'jam/EpicEditor/epiceditor'
+        , basePath: 'epiceditor'
         , localStorageName: 'epiceditor'
         , file: { name: null
         , defaultContent: ''
